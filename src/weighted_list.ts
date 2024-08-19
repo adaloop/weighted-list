@@ -19,6 +19,7 @@ export class WeightedList<T> {
 
     this.accumulatedWeight += weight
     this.items.push(new WeightedItem(item, this.accumulatedWeight))
+    return this
   }
 
   clear() {

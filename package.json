@@ -1,0 +1,66 @@
+{
+  "name": "@btrul/weighted-list",
+  "version": "1.0.0",
+  "description": "Weighted list implementation, pick random item using probability distribution",
+  "main": "main/index.js",
+  "type": "module",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "del-cli build",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .ts",
+    "prepublishOnly": "npm run build",
+    "release": "npx release-it",
+    "test": "c8 node --loader ts-node/esm --enable-source-maps bin/test.ts",
+    "quick:test": "node --loader ts-node/esm --enable-source-maps bin/test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "weighted",
+    "list",
+    "probability",
+    "loot"
+  ],
+  "author": "tom-brulin",
+  "license": "MIT",
+  "devDependencies": {
+    "@japa/assert": "^3.0.0",
+    "@japa/expect-type": "^2.0.2",
+    "@japa/runner": "^3.1.4",
+    "@swc/core": "^1.7.12",
+    "@tbrul/eslint-config": "^1.0.6",
+    "@tbrul/prettier-config": "^1.0.6",
+    "@tbrul/tsconfig": "^1.0.6",
+    "@types/node": "^22.4.1",
+    "c8": "^10.1.2",
+    "del-cli": "^5.1.0",
+    "eslint": "^9.9.0",
+    "prettier": "^3.3.3",
+    "release-it": "^17.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "eslintConfig": {
+    "extends": "@tbrul/eslint-config/package"
+  },
+  "prettier": "@tbrul/prettier-config",
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore(release): ${version}",
+      "tagAnnotation": "v${version}",
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true,
+      "releaseName": "v${version}",
+      "web": true
+    }
+  }
+}

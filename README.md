@@ -51,7 +51,7 @@ const item2 = list.pick(50) // You can also pick a specific weight
 
 ### Loot Table
 
-Loot table is a table is where each row is a weighted list. It is often used in games.
+Loot table is a table is where each row is a weighted list and has a chance to be rolled. It is often used in games.
 
 ```ts
 import { LootTable, WeightedList } from '@tbrul/weighted-list'

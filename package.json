@@ -1,6 +1,6 @@
 {
   "name": "@tbrul/weighted-list",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Weighted list implementation, pick random item using probability distribution",
   "main": "build/index.js",
   "types": "build/index.d.ts",

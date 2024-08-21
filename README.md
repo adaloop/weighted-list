@@ -10,7 +10,7 @@ Weighted list are lists where each item has a weight. The probability of picking
 
 ### Loot Table
 
-Loot table is a table is where each row is a weighted list.
+Loot table is a table is where each row is a weighted list and has a chance to be rolled. It is often used in games.
 
 ## Installation
 
@@ -50,8 +50,6 @@ const item2 = list.pick(50) // You can also pick a specific weight
 ```
 
 ### Loot Table
-
-Loot table is a table is where each row is a weighted list and has a chance to be rolled. It is often used in games.
 
 ```ts
 import { LootTable, WeightedList } from '@tbrul/weighted-list'

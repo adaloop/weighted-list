@@ -1,4 +1,4 @@
-import { WrongNumberProbabilityError } from './errors/wrong_number_probability.js'
+import { WrongNumberProbabilityError } from './errors/wrong_number_probability_error.js'
 import { MathRandomGenerator, RandomGenerator } from './random_generator.js'
 import { WeightedList } from './weighted_list.js'
 

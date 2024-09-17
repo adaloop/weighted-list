@@ -1,5 +1,5 @@
 {
-  "name": "@tbrul/weighted-list",
+  "name": "@adaloop/weighted-list",
   "version": "1.0.3",
   "description": "Weighted list implementation, pick random item using probability distribution",
   "main": "build/index.js",
@@ -23,18 +23,19 @@
     "weighted",
     "list",
     "probability",
-    "loot"
+    "loot",
+    "adaloop"
   ],
-  "author": "tom-brulin",
+  "author": "adaloop <hello@adaloop.com>",
   "license": "MIT",
   "devDependencies": {
     "@japa/assert": "^3.0.0",
     "@japa/expect-type": "^2.0.2",
     "@japa/runner": "^3.1.4",
     "@swc/core": "^1.7.12",
-    "@tbrul/eslint-config": "^1.0.6",
-    "@tbrul/prettier-config": "^1.0.6",
-    "@tbrul/tsconfig": "^1.0.6",
+    "@adaloop/eslint-config": "^1.0.7",
+    "@adaloop/prettier-config": "^1.0.7",
+    "@adaloop/tsconfig": "^1.0.7",
     "@types/node": "^22.4.1",
     "c8": "^10.1.2",
     "del-cli": "^5.1.0",
@@ -45,9 +46,9 @@
     "typescript": "^5.5.4"
   },
   "eslintConfig": {
-    "extends": "@tbrul/eslint-config/package"
+    "extends": "@adaloop/eslint-config/package"
   },
-  "prettier": "@tbrul/prettier-config",
+  "prettier": "@adaloop/prettier-config",
   "publishConfig": {
     "access": "public",
     "tag": "latest"

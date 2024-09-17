@@ -8,6 +8,15 @@ importers:
 
   .:
     devDependencies:
+      '@adaloop/eslint-config':
+        specifier: ^1.0.7
+        version: 1.0.7(eslint@9.9.0)(prettier@3.3.3)(typescript@5.5.4)
+      '@adaloop/prettier-config':
+        specifier: ^1.0.7
+        version: 1.0.7
+      '@adaloop/tsconfig':
+        specifier: ^1.0.7
+        version: 1.0.7
       '@japa/assert':
         specifier: ^3.0.0
         version: 3.0.0(@japa/runner@3.1.4)(openapi-types@1.3.4)
@@ -20,15 +29,6 @@ importers:
       '@swc/core':
         specifier: ^1.7.12
         version: 1.7.12
-      '@tbrul/eslint-config':
-        specifier: ^1.0.6
-        version: 1.0.6(eslint@9.9.0)(prettier@3.3.3)(typescript@5.5.4)
-      '@tbrul/prettier-config':
-        specifier: ^1.0.6
-        version: 1.0.6
-      '@tbrul/tsconfig':
-        specifier: ^1.0.6
-        version: 1.0.6
       '@types/node':
         specifier: ^22.4.1
         version: 22.4.1
@@ -55,6 +55,18 @@ importers:
         version: 5.5.4
 
 packages:
+
+  '@adaloop/eslint-config@1.0.7':
+    resolution: {integrity: sha512-/evYnDrjbSnOc/zd+6d9wdBck8POdIIbCW7QOSLuoEQNKhX868ZYHlCvBaP4ZyXLkyRMek2eqghF+Sto/9cSBg==}
+    peerDependencies:
+      eslint: ^8.57.0
+      prettier: '>=3.0.0'
+
+  '@adaloop/prettier-config@1.0.7':
+    resolution: {integrity: sha512-e5bTkxWxLqw7eHU7rgOSpJJSYZBU3taSjcRvj0f3gm0Sk28jZscHerpZsuVLbGAicN9B75kJ4P9NHFyXmS41Kw==}
+
+  '@adaloop/tsconfig@1.0.7':
+    resolution: {integrity: sha512-61tEcmO54dbIL/OI0OrXITUalnmQyWs9tkY26MWdE4zh+iO1zm35YitWrL9hmtkJCu808LpWT2XgHdIGwobq0A==}
 
   '@apidevtools/json-schema-ref-parser@9.1.2':
     resolution: {integrity: sha512-r1w81DpR+KyRWd3f+rk6TNqMgedmAxZP5v5KWlXQWlgMUUtyEJch0DKEci1SorPMiSeM8XPl7MZ3miJ60JIpQg==}
@@ -380,18 +392,6 @@ packages:
   '@szmarczak/http-timer@5.0.1':
     resolution: {integrity: sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==}
     engines: {node: '>=14.16'}
-
-  '@tbrul/eslint-config@1.0.6':
-    resolution: {integrity: sha512-hJNX8ggMcji9EttayKvFbeSJNTzlJ+nWkBFXDK1WC95F6R6V1GsgroSe589WJ1vzO/Tx2jSqD0v6JZlyhHvNLg==}
-    peerDependencies:
-      eslint: ^8.57.0
-      prettier: '>=3.0.0'
-
-  '@tbrul/prettier-config@1.0.6':
-    resolution: {integrity: sha512-9zIxb2+8OIktISxrpDdMYPAAsvdVlropybXK1XLc0yyiHAvpZQKd46YwdSD/A1pnEi7lEOxyM1uIjMCbgjZQiw==}
-
-  '@tbrul/tsconfig@1.0.6':
-    resolution: {integrity: sha512-ILBS7znqkidlLt5iFPPD1EH11xtZle/I54S7JYOU8jcP3uqiuOOU3YNv7jUPLdjPSvesRL7OVACnkZO5HAZHPA==}
 
   '@tootallnate/quickjs-emscripten@0.23.0':
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
@@ -2882,6 +2882,26 @@ packages:
 
 snapshots:
 
+  '@adaloop/eslint-config@1.0.7(eslint@9.9.0)(prettier@3.3.3)(typescript@5.5.4)':
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 7.18.0(@typescript-eslint/parser@7.18.0(eslint@9.9.0)(typescript@5.5.4))(eslint@9.9.0)(typescript@5.5.4)
+      '@typescript-eslint/parser': 7.18.0(eslint@9.9.0)(typescript@5.5.4)
+      eslint: 9.9.0
+      eslint-config-prettier: 9.1.0(eslint@9.9.0)
+      eslint-plugin-jsonc: 2.16.0(eslint@9.9.0)
+      eslint-plugin-prettier: 5.2.1(eslint-config-prettier@9.1.0(eslint@9.9.0))(eslint@9.9.0)(prettier@3.3.3)
+      eslint-plugin-unicorn: 54.0.0(eslint@9.9.0)
+      jsonc-eslint-parser: 2.4.0
+      prettier: 3.3.3
+    transitivePeerDependencies:
+      - '@types/eslint'
+      - supports-color
+      - typescript
+
+  '@adaloop/prettier-config@1.0.7': {}
+
+  '@adaloop/tsconfig@1.0.7': {}
+
   '@apidevtools/json-schema-ref-parser@9.1.2':
     dependencies:
       '@jsdevtools/ono': 7.1.3
@@ -3226,26 +3246,6 @@ snapshots:
   '@szmarczak/http-timer@5.0.1':
     dependencies:
       defer-to-connect: 2.0.1
-
-  '@tbrul/eslint-config@1.0.6(eslint@9.9.0)(prettier@3.3.3)(typescript@5.5.4)':
-    dependencies:
-      '@typescript-eslint/eslint-plugin': 7.18.0(@typescript-eslint/parser@7.18.0(eslint@9.9.0)(typescript@5.5.4))(eslint@9.9.0)(typescript@5.5.4)
-      '@typescript-eslint/parser': 7.18.0(eslint@9.9.0)(typescript@5.5.4)
-      eslint: 9.9.0
-      eslint-config-prettier: 9.1.0(eslint@9.9.0)
-      eslint-plugin-jsonc: 2.16.0(eslint@9.9.0)
-      eslint-plugin-prettier: 5.2.1(eslint-config-prettier@9.1.0(eslint@9.9.0))(eslint@9.9.0)(prettier@3.3.3)
-      eslint-plugin-unicorn: 54.0.0(eslint@9.9.0)
-      jsonc-eslint-parser: 2.4.0
-      prettier: 3.3.3
-    transitivePeerDependencies:
-      - '@types/eslint'
-      - supports-color
-      - typescript
-
-  '@tbrul/prettier-config@1.0.6': {}
-
-  '@tbrul/tsconfig@1.0.6': {}
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 

@@ -1,6 +1,6 @@
 # Weighted List
 
-`@tbtul/weighted-list` is a weighted list implementation, pick random item using probability distribution. It also includes a loot table implementation.
+`@adaloop/weighted-list` is a weighted list implementation, pick random item using probability distribution. It also includes a loot table implementation.
 
 ## Features
 
@@ -15,7 +15,7 @@ Loot table is a table is where each row is a weighted list and has a chance to b
 ## Installation
 
 ```bash
-npm install @tbrul/weighted-list
+npm install @adaloop/weighted-list
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ npm install @tbrul/weighted-list
 ### Weighted List
 
 ```ts
-import { WeightedList } from '@tbrul/weighted-list'
+import { WeightedList } from '@adaloop/weighted-list'
 
 const list = new WeightedList<string>(100) // 100 is the total weight, default is 100
 list.add('a', 25)
@@ -39,7 +39,7 @@ const item2 = list.pick(50) // You can also pick a specific weight
 When item added doesn't fill the total weight, it can return null.
 
 ```ts
-import { WeightedList } from '@tbrul/weighted-list'
+import { WeightedList } from '@adaloop/weighted-list'
 
 const list = new WeightedList<string>(100) // 100 is the total weight, default is 100
 list.add('a', 25)
@@ -52,7 +52,7 @@ const item2 = list.pick(50) // You can also pick a specific weight
 ### Loot Table
 
 ```ts
-import { LootTable, WeightedList } from '@tbrul/weighted-list'
+import { LootTable, WeightedList } from '@adaloop/weighted-list'
 
 const lootTable = new LootTable<string>()
 
